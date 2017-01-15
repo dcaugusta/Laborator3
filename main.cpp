@@ -1,13 +1,15 @@
 #include <iostream>
-#include <windows.h>  //  Pentru a putea apela Sleep()
 using namespace std;
 
 int main()
 {
-  for ( int i= 10 ; i>0; i--) {
-    cout <<i<< endl;
-    Sleep(1000); // temporizare 1sec
+int a[20],i;
+    for (i=0;i<20;i=i++) {
+        a[i]=i+1;
     }
-    cout << "racheta lansata " << endl;
+    for (i=0;i<20;i++){
+        cout<< a[i]<< " ";
+    }
+    cout << endl;
     return (0);
 }
